@@ -1,1 +1,41 @@
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MCP2DT0DS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8MCP2DT0DS');
+</script>
+
+
+<script>
+function sendReadEvent(title, numberOfCharacters){
+    gtag('event','read_article', {
+        "author":"Kim C",
+        "title":"title",
+        "number_of_characters": numberOfCharacters,
+    });    
+}
+
+document.AddEventListener("DOMcontentLoaded, () => {
+
+
+    document.getElementById(read-article-1").addEventListener("click", () => {
+        sendReadEvent("article 1", 50)
+    });   
+
+
+
+    document.getElementById(read-article-2").addEventListener("click", () => {
+        sendReadEvent("article 2", 100)
+    });   
+
+
+    document.getElementById(read-article-3").addEventListener("click", () => {
+        sendReadEvent("article 3", 150)
+    });   
+
+});
+</script>
