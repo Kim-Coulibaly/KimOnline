@@ -12,3 +12,5 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 [Subscribe 250](/subscribe)
 
 [Subscribe 500](/subscribe)
+
+<a> href:"https://alexander-analytics.github.io/"</a>
